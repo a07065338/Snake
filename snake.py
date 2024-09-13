@@ -43,8 +43,9 @@ def move():
 
     if head == food:
         print('Snake:', len(snake))
-        food.x = randrange(-15, 15) * 10
-        food.y = randrange(-15, 15) * 10
+        food.x = randrange(-20, 19) * 10
+        ##Cambie los valores para permitir que se mueva por todo el tablero
+        food.y = randrange(-20, 19) * 10
     else:
         snake.pop(0)
 
